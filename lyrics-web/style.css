@@ -14,6 +14,8 @@ header {
 
 .lyrics{
   background-color: #f5f5f5;
+  padding:10px;
+  margin: 10px;
 }
 
 .singer{
@@ -22,6 +24,13 @@ header {
   font-size: 15px;
   margin: 15px;
 }
+
+.ending{
+  background-color: #f5f5f5;
+  padding:10px;
+  margin: 10px;
+}
+
 
 .singer a{
   color: #000000;
