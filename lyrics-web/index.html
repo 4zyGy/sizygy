@@ -40,9 +40,9 @@
 
  <script>
    const lyricsList = [
-     { name: "Gemini - First love 日文版", url: "gemini/song1.html" },
+     { name: "Gemini - First love 日文版", url: "first-love-jp.html" },
      { name: "BUS - ถ้าเราเจอกันอีกครั้ง", url: "bus/song1.html" },
-     { name: "Gemini - ไกลเกิน (TOO CLOSE TO HANDLE)", url: "gemini/song2.html" },
+     { name: "Gemini - ไกลเกิน (TOO CLOSE TO HANDLE)", url: "too-close-too-handle.html" },
      { name: "其他 - 渡", url: "other/song1.html" }
    ];
 
@@ -56,7 +56,7 @@
      resultList.innerHTML = "";
 
      if (results.length === 0) {
-       resultList.innerHTML = "<li>搵唔到結果 😢</li>";
+       resultList.innerHTML = "<li>找不到結果 😢</li>";
      } else {
        results.forEach(song => {
          const li = document.createElement("li");
