@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+body{
+  background-color: #ffffff;
+}
+
+
+header {
+  font-size: 20px;
+  position: relative;
+  align-items: center;
+  text-align:center;
+ 
+}
+
+.lyrics{
+  background-color: #f5f5f5;
+}
+
+.singer{
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-size: 15px;
+  margin: 15px;
+}
+
+.singer a{
+  color: #000000;
+  text-decoration: none;
+}
+.singer a:hover{
+  text-decoration: underline;
+}
+.singer ul{
+  list-style-type: none;
+  padding-left: 10rpx;
+
+}
+
+
+
+body { margin: 0; font-family: sans-serif; }
+
+/* 🧀 漢堡icon */
+.menu-icon {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  width: 30px;
+  height: 4px;
+  background: black;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+/* 🍔 checkbox 用嚟控制menu開關 */
+#menu-toggle {
+  display: none;
+}
+
+/* 🍟 側邊menu */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background: white;
+  padding-top:70px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  z-index: 2;
+}
+.sidebar a{
+  list-style-type: none;
+  text-decoration: none;
+  color: #000000;
+}
+.sidebar a:hover{
+  text-decoration: underline;
+}
+
+.sidebar ul{
+  list-style-type: none;
+  padding-left: 50px;
+  line-height: 2;
+}
+
+/* 🍫 遮罩層 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+/* ✅ 當checkbox被撳中，就show menu + 遮罩 */
+#menu-toggle:checked ~ .sidebar {
+  left: 0;
+}
+
+#menu-toggle:checked ~ .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* 隱藏 checkbox */
+#search-toggle {
+  display: none;
+}
+
+/* 放大鏡圖示 */
+.search-icon {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+/* 搜索框樣式 */
+.search-bar {
+  position: fixed;
+  top: -60;
+  left: 0;
+  width: 100%;
+  height: 60px; /* 你可以調整高度 */
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  padding: 10px;
+  transition: top 0.3s ease-in-out;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#search-toggle:checked ~ .search-bar{
+  top: 0;
+}
+
+/* 當 checkbox 被勾選時，搜索欄滑下來 */
+#search-toggle:checked ~ .search-bar {
+  top: 0;
+}
+
+/* 半透明黑色遮罩 */
+.overlay {
+  position: fixed;
+  top: 60px; /* 保證遮罩唔會遮住搜索欄 */
+  left: 0;
+  width: 100%;
+  height: calc(100% - 60px); /* 高度係剩返嚟嘅地方 */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+
+/* 當勾選 checkbox 時，顯示遮罩 */
+#search-toggle:checked ~ .overlay {
+  display: block;
+}
+
+#search-toggle:checked ~ .overlay active{
+  display: none;
+
+}
