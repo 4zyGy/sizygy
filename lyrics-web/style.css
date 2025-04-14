@@ -11,6 +11,24 @@ header {
   text-align:center;
 
 }
+.all-song{
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-size: 15px;
+  margin: 15px;
+}
+.all-song a{
+  color: #000000;
+  text-decoration: none;
+}
+.all-song a:hover{
+  text-decoration: underline;
+}
+.all-song ul{
+  list-style-type: none;
+  padding-left: 10rpx;
+
+}
 
 .lyrics{
   background-color: #f5f5f5;
