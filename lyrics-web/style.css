@@ -3,17 +3,6 @@ body{
   background-color: #ffffff;
 }
 
-.topbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  color: black;
-  padding: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 少少陰影更靚 */
-  z-index: 1000;
-}
 
 header {
   font-size: 20px;
@@ -56,6 +45,8 @@ header {
 
 }
 
+.form {
+	align-item: center;
 
 
 body { margin: 0; font-family: sans-serif; }
