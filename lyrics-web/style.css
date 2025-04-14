@@ -2,6 +2,10 @@
 body{
   background-color: #ffffff;
 }
+.menu-icon {
+  border: 2px dashed red;
+  background-color: #fff;
+}
 
 
 header {
