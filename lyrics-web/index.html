@@ -37,53 +37,39 @@
     <h1>name</h1>
   </header>
 
-  <!-- 🔍 搜尋框 -->
-  <div class="search-container">
-    <input type="text" id="searchBox" placeholder="輸入歌手或歌名">
-    <button onclick="searchLyrics()">搜尋</button>
-  </div>
+<!-- 🔍 搜尋框 -->
+<div class="search-container">
+  <input type="text" id="searchBox" placeholder="輸入歌手或歌名" oninput="filterSongs()">
+</div>
 
-  <ul id="searchResults"></ul>
+<!-- 🎵 所有歌曲 -->
+<section class="all-song">
+  <ul id="songList">
+    <li><a href="first-love-jp.html">Gemini - First love 日文版</a></li>
+    <li><a href="bus/song1.html">BUS - ถ้าเราเจอกันอีกครั้ง</a></li>
+    <li><a href="too-close-too-handle.html">Gemini - ไกลเกิน (TOO CLOSE TO HANDLE)</a></li>
+    <li><a href="other/song1.html">其他 - 渡</a></li>
+    <li><a href="phap-rao.html">BUS - Good Quality Picture</a></li>
+    <li><a href="other.html">其他歌</a></li>
+  </ul>
+</section>
 
-  <script>
-    const lyricsList = [
-      { name: "Gemini - First love 日文版", url: "first-love-jp.html" },
-      { name: "BUS - ถ้าเราเจอกันอีกครั้ง", url: "bus/song1.html" },
-      { name: "Gemini - ไกลเกิน (TOO CLOSE TO HANDLE)", url: "too-close-too-handle.html" },
-      { name: "其他 - 渡", url: "other/song1.html" }
-    ];
+<script>
+  function filterSongs() {
+    const input = document.getElementById("searchBox").value.toLowerCase();
+    const listItems = document.querySelectorAll("#songList li");
 
-    function searchLyrics() {
-      const input = document.getElementById("searchBox").value.toLowerCase();
-      const results = lyricsList.filter(song =>
-        song.name.toLowerCase().includes(input)
-      );
-
-      const resultList = document.getElementById("searchResults");
-      resultList.innerHTML = "";
-
-      if (results.length === 0) {
-        resultList.innerHTML = "<li>找不到結果 😢</li>";
+    listItems.forEach(li => {
+      const text = li.textContent.toLowerCase();
+      if (text.includes(input)) {
+        li.style.display = "list-item";
       } else {
-        results.forEach(song => {
-          const li = document.createElement("li");
-          li.innerHTML = `<a href="${song.url}">${song.name}</a>`;
-          resultList.appendChild(li);
-        });
+        li.style.display = "none";
       }
-    }
-  </script>
+    });
+  }
+</script>
 
-  <section class="all-song">
-    <ul>
-      <li><a href="first-love-jp.html">Gemini - first love日文版</a></li>
-      <li><a href="phap-rao.html">BUS - Good Quality Picture</a></li>
-
-      <li><a href="other.html">其他歌</a></li>
-
-    </ul>
-    
-  </section>
   
 </body>
 </html>
