@@ -1,4 +1,11 @@
-@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+pre {
+  font-family: 'Noto Sans Thai', 'Poppins', sans-serif;
+  font-size: 1.1em;
+  white-space: pre-wrap;
+}
+
+
 body{
   background-color: #ffffff;
 }
