@@ -68,6 +68,13 @@
       }
     });
   }
+
+  // ⭐️ 加呢段：監聽 Enter 鍵
+  document.getElementById("searchBox").addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      filterSongs(); // 撳 Enter 時執行 filter
+    }
+  });
 </script>
 
   
