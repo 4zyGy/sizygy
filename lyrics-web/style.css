@@ -10,15 +10,15 @@ header {
   text-align:center;
 
 }
-.search-container {
-  width: 80%;
-  max-width: 500px;
-  padding: 12px 20px;
-  font-size: 18px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  margin: 20px auto;
+.search-container input {
+  font-size: 18px; /* 字大細 */
+  border: 2px solid #ccc; /* 邊框粗幼同顏色 */
+  border-radius: 8px; /* 邊框圓角 */
+  padding: 12px 20px; /* 入面留白，令search bar舒服啲 */
+  width: 80%; /* search bar闊啲 */
+  max-width: 500px; /* 最闊唔超過500px */
   display: block;
+  margin: 20px auto; /* search bar居中 */
 }
 
 .all-song{
