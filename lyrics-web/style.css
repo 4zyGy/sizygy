@@ -10,7 +10,7 @@ header {
   text-align:center;
 
 }
-.search-container input {
+.search-container {
   width: 80%;
   max-width: 500px;
   padding: 12px 20px;
