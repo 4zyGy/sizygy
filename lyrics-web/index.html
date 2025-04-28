@@ -54,6 +54,20 @@
     <li><a href="other.html">其他歌</a></li>
   </ul>
 </section>
+  
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const list = document.getElementById('songList');
+    const items = Array.from(list.querySelectorAll('li'));
+
+    items.sort((a, b) => 
+      a.textContent.trim().localeCompare(b.textContent.trim())
+    );
+
+    list.innerHTML = '';
+    items.forEach(item => list.appendChild(item));
+  });
+</script>
 
 <script>
   function filterSongs() {
