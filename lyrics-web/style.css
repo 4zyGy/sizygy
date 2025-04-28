@@ -1,9 +1,12 @@
 body{
-  background-color: #ffffff;
+  background-color: #fff7ed
+  color: #5c4033; /* 巧克力啡色字 */
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 
 header {
+  color: #ffab76; /* 蜜桃橙色header */
   font-size: 20px;
   position: relative;
   align-items: center;
@@ -25,18 +28,17 @@ header {
 
 
 .all-song, .singer {
-  background-color: #f5f5f5;
   padding: 20px;
   font-size: 15px;
   margin: 15px;
 }
 .all-song a, .singer a {
-  color: #000000;
+  color: #ffab76;
   text-decoration: none;
 }
 
 .all-song a:hover, .singer a:hover {
-  text-decoration: underline;
+  color: #ff8552;
 }
 
 .all-song ul, .singer ul {
