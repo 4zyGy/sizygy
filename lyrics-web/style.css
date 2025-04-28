@@ -72,7 +72,9 @@ header {
 .singer a:hover{
   text-decoration: underline;
 }
-
+.all-song ul{
+  list-style-type: none;
+}
 .form {
   align-item: center;
 }
