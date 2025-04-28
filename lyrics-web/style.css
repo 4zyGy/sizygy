@@ -30,20 +30,20 @@ header {
   font-size: 15px;
   margin: 15px;
 }
-.all-song, .singer a{
+.all-song a, .singer a {
   color: #000000;
   text-decoration: none;
 }
 
-.all-song, .singer a:hover{
+.all-song a:hover, .singer a:hover {
   text-decoration: underline;
 }
 
-.all-song, .singer ul{
+.all-song ul, .singer ul {
   list-style-type: none;
-  padding-left: 10rpx;
-
+  padding-left: 10px; /* 順便改返正常單位係 px 唔係 rpx */
 }
+
 
 .lyrics{
   font-family: 'sans-serif';
