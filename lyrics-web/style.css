@@ -5,7 +5,7 @@ body{
 
 
 header {
-  color: #ffab76; /* 蜜桃橙色header */
+  color: #452e03; /* 蜜桃橙色header */
   font-size: 20px;
   position: relative;
   align-items: center;
@@ -32,12 +32,12 @@ header {
   margin: 15px;
 }
 .all-song a, .singer a {
-  color: #ffab76;
+  color: #452e03;
   text-decoration: none;
 }
 
 .all-song a:hover, .singer a:hover {
-  color: #ff8552;
+  text-decoration: underline;
 }
 
 .all-song ul, .singer ul {
