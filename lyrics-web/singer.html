@@ -35,11 +35,25 @@
       <ul>
         <li><a href="bus.html">BUS</a></li>
         <li><a href="gemini.html">Gemini</a></li>
-        <li><a href=".html">example</a></li>
+        <li><a href=".fourthhtml">example</a></li>
 
       </ul>
 
     </section>
+
+ <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const list = document.getElementById('songList');
+    const items = Array.from(list.querySelectorAll('li'));
+
+    items.sort((a, b) => 
+      a.textContent.trim().localeCompare(b.textContent.trim())
+    );
+
+    list.innerHTML = '';
+    items.forEach(item => list.appendChild(item));
+  });
+</script>
 
   </body>
 </html>
