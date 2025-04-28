@@ -24,20 +24,22 @@ header {
 }
 
 
-.all-song{
+.all-song, .singer {
   background-color: #f5f5f5;
   padding: 20px;
   font-size: 15px;
   margin: 15px;
 }
-.all-song a{
+.all-song, .singer a{
   color: #000000;
   text-decoration: none;
 }
-.all-song a:hover{
+
+.all-song, .singer a:hover{
   text-decoration: underline;
 }
-.all-song ul{
+
+.all-song, .singer ul{
   list-style-type: none;
   padding-left: 10rpx;
 
@@ -51,12 +53,7 @@ header {
   margin: 15px;
 }
 
-.singer{
-  background-color: #f5f5f5;
-  padding: 20px;
-  font-size: 15px;
-  margin: 15px;
-}
+
 
 .ending{
   background-color: #f5f5f5;
@@ -65,16 +62,6 @@ header {
 }
 
 
-.singer a{
-  color: #000000;
-  text-decoration: none;
-}
-.singer a:hover{
-  text-decoration: underline;
-}
-.all-song ul{
-  list-style-type: none;
-}
 .form {
   align-item: center;
 }
