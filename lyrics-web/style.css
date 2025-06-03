@@ -181,14 +181,16 @@ pre {
   }
 }
 
-iframe {
-  max-width: 700px;
-  width: 100%;
-}
 
 .form {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 2rem;
+  padding: 1rem; /* 比之前少 */
+}
+
+.form iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 600px;
+  border: none;
 }
